@@ -38,7 +38,7 @@ while True:
 
 	# Remove noises and shadows, basically keeping only area greater than 1000 px
 	for contour in contours:
-		if cv2.contourArea(contour) < 10000:
+		if cv2.contourArea(contour) < 1000:
 			continue
 		status = 1
 
